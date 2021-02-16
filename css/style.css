@@ -34,7 +34,7 @@ header {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 24px 15px;
+  padding: 0px 15px;
 }
 
 .brand {
@@ -72,20 +72,26 @@ footer .brand {
   margin-left: 50px;
 }
 
-.nav a,
-.nav a:visited {
+.link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav .link,
+.nav .link:visited {
   color: var(--title-cl);
 }
 
-.contacts a,
-.contacts a:visited {
+.contacts .link,
+.contacts .link:visited {
   color: currentColor;
 }
 
-.nav a:focus,
-.nav a:hover,
-.contacts a:focus,
-.contacts a:hover{
+.nav .link:focus,
+.nav .link:hover,
+.contacts .link:focus,
+.contacts .link:hover{
   color: var(--accent-cl);
 }
 
