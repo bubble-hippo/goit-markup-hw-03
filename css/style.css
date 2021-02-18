@@ -97,13 +97,14 @@ footer .brand {
 
 footer {
   background-color: var(--dgrey-bc);
+  padding: 60px 0px;
 }
 
 .footer-container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 60px 15px;
+  padding: 0px 15px;
 }
 
 address {
@@ -191,12 +192,15 @@ h2 {
 }
 
 .container {
-  margin-top: -30px;
-  display: flex;
-  flex-wrap: wrap;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.container .list {
+  margin-top: -30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .item {
@@ -262,9 +266,6 @@ h2 {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .filters li:not(:first-child) {
@@ -319,4 +320,18 @@ h2 {
 .product p {
   font-size: 16px;
   line-height: 1.88;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
